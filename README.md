@@ -34,13 +34,13 @@ You can find the images in **Dataset**.
 9. Modify Config (.config) File : Each of the pretrained models has a config file that contains details about the model. To detect our custom class, the config file needs to be modified accordingly.
  
 10. Training the models : 
-# Change into the models directory
+#Change into the models directory
 $ cd tensorflow/models
-# Make directory for storing training progress
+#Make directory for storing training progress
 $ mkdir train
-# Make directory for storing validation results
+#Make directory for storing validation results
 $ mkdir eval
-# Begin training
+#Begin training
 $ python research/object_detection/train.py \
     --logtostderr \
     --train_dir=train \
