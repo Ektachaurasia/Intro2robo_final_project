@@ -46,9 +46,12 @@ $ python research/object_detection/train.py \
     --train_dir=train \
     --pipeline_config_path=ssd_mobilenet_v2_coco.config
     
-11. Model export :Once you finish training your model, you can export your model to be used for inference.
+11. Model export :Once we finish training our model, we export the weights of the model to be used for inference.
 
-12. 
+12. We used OpenCV for detecting objects in live camera stream.
+
+
+**You can find all the codes in the folder models. **
 
 
 
