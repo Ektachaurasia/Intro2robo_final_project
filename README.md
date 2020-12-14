@@ -1,4 +1,4 @@
-# Intro2robo_final_project : Waster segregation by OWI robot arm 
+# Intro2robo_final_project : Waste segregation by OWI robot arm 
 
 ## Motivaton for the project
 
@@ -50,8 +50,6 @@ $ python research/object_detection/train.py \
 
 12. We used OpenCV for detecting objects in live camera stream.
 
-
-**You can find all the codes in the folder models. **
 
 
 
