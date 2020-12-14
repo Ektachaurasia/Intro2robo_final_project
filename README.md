@@ -17,7 +17,6 @@ The code for this project is in **'Voice_recognition.io'**.
 1. Clone the Tensorflow models repository using $ git clone https://github.com/tensorflow/models.git.
 
 2. Collect data : We prepared a dataset of 200 images of plastic, paper, metal and glass. 
-You can find the images in **Dataset**.
 
 3. Split into Train and Test data ; Our ratio was 80:20 for train:test.
 
@@ -33,20 +32,9 @@ You can find the images in **Dataset**.
 
 9. Modify Config (.config) File : Each of the pretrained models has a config file that contains details about the model. To detect our custom class, the config file needs to be modified accordingly.
  
-10. Training the models : 
-#Change into the models directory
-$ cd tensorflow/models
-#Make directory for storing training progress
-$ mkdir train
-#Make directory for storing validation results
-$ mkdir eval
-#Begin training
-$ python research/object_detection/train.py \
-    --logtostderr \
-    --train_dir=train \
-    --pipeline_config_path=ssd_mobilenet_v2_coco.config
+10. Training the models : Install all required packages ie Tensorflow 1.15, cythan, pycocotools, pandas, protoc, numpy . As we did not have GPU in our computer, training was taking a lot of time. So we used google colab to train the model on free open source GPU. You can find the colab code as ModelTrainingOnColab.ipynb.
     
-11. Model export :Once we finish training our model, we export the weights of the model to be used for inference.
+11. Model export :Once we finish training our model, we export the weights of the model to be used for inference
 
 12. We used OpenCV for detecting objects in live camera stream.
 
